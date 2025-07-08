@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+*.pkl
+*.pt
+data/
+outputs/
+venv/
+.env/
+*.bat
+*.vbs
+*.log
+logs/
+.vscode
