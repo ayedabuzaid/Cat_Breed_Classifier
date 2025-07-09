@@ -3,7 +3,7 @@
 ![cat](app/assets/cat.ico)
 
 ## Project description
-This project aims to classify cat breeds based on their characteristics, using __neural networks__.
+This project aims to classify cat breeds based on their characteristics, using __*neural networks*__.
 
 ## Objective of the project
 It is a training project to complete the course on machine and deep learning at Mutah University.
