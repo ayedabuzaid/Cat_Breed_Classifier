@@ -1,4 +1,4 @@
-# Cat Breed Classifier
+# Cat Breeds Classifier
 
 ![cat](app/assets/cat.ico)
 
