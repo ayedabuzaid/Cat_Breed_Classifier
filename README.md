@@ -1,6 +1,6 @@
 # Cat Breeds Classifier
 
-![cat](app/assets/cat.ico)
+<img src="app/icon/Cat_Breed_Classifier.jpg" alt="Cat Breed Classifier" width="300"/>
 
 ## Project description
 This project aims to classify cat breeds based on their characteristics, using __*neural networks*__.
@@ -67,7 +67,7 @@ Example of data used :
 
 ## User interface
 
-![user_interface](app/assets/example.png)
+![user_interface](https://youtu.be/C6WAByIjeM0?si=0LI_a3J-jgLrcxVZ)
 
 Enter your cat's information and you will get a breed.
 
@@ -89,7 +89,7 @@ python main.py
 
 ## Team
 
-- Ayed Amjed Ayed Elayan
+- Ayed Amjed Ayed Abu Zaid
 
 ## Comments
 

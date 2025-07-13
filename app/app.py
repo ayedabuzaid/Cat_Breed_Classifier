@@ -7,6 +7,7 @@ import torch.optim as optim
 from sklearn.preprocessing import MinMaxScaler
 import joblib
 import gradio as gr
+import os
 
 # Structure of the trained model.
 
@@ -59,7 +60,8 @@ def prediction(Weight, length, Fur_length, Fur_type, Fur_color, Eye_color, Age, 
        breed_map = {0: 'Abyssinian', 1: 'British Shorthair', 2: 'Egyption Mau', 3: 'Japanese Bobtail', 4: 'Maine Coon', 5: 'Manx',
                     6: 'Norwegian Forest Cat', 7: 'Persian', 8: 'Siamese', 9: 'Turkish Angora'}
        predicted_breed = breed_map.get(predicted.item())
-       return predicted_breed
+       image_path = os.path.join("app\photos", f"{predicted_breed}.jpg")
+       return predicted_breed , image_path
     
 # Create a user interface to receive new data and output label (Gradio).
 
@@ -67,18 +69,22 @@ def launch_app ():
   app = gr.Interface(
       fn = prediction,
       inputs = [
-          gr.Textbox(label = "Weight"),
-          gr.Textbox(label = "Length"),
-          gr.Dropdown(["long", "short", "short/medium", "medium/long"], label = "Fur Length"),
-          gr.Dropdown(["soft", "silky", "heavy", "Thick/soft"], label = "Fur Type"),
-          gr.Dropdown(["white", "black", "gray", "silver", "brown", "red", "ruddy", "blue", "orange", "smokey", "creamy", "calcalico",
+          gr.Textbox(label = "Weight (KG)"),
+          gr.Textbox(label = "Length (CM)"),
+          gr.Dropdown(["Choose one option","long", "short", "short/medium", "medium/long"], label = "Fur Length"),
+          gr.Dropdown(["Choose one option", "soft", "silky", "heavy", "Thick/soft"], label = "Fur Type"),
+          gr.Dropdown(["Choose one option", "white", "black", "gray", "silver", "brown", "red", "ruddy", "blue", "orange", "smokey", "creamy", "calcalico",
                        "bronze", "Bluish grey"], label = "Fur Color"),
-          gr.Dropdown(["Hazelnut", "amber", "blue", "copper", "golden", "green", "pink", "two different eyes"], label = "Eye Color"),
-          gr.Textbox(label = "Age"),
+          gr.Dropdown(["Choose one option", "Hazelnut", "amber", "blue", "copper", "golden", "green", "pink", "two different eyes"],
+                       label = "Eye Color"),
+          gr.Textbox(label = "Age (Years)"),
           gr.Textbox(label = "Sleep Hours"),
                                             ],
-      outputs = "text",
-      title = "Prediction Cat Breeds",
+      outputs = [
+         gr.Textbox(label = "Cat breed"),
+         gr.Image(label = "Picture of a breed", width = 800, height = 600)
+      ],
+      title = "Cat Breed Classifier",
       description = "Fill in the following information so I can predict your cat's breed."
       )
   
