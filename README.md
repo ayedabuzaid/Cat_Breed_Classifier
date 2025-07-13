@@ -65,9 +65,9 @@ Example of data used :
 |F1-score | 1.0 |
 |Confusion Matrix | No data confusion |
 
-## User interface
+## Watch in Action
 
-![user_interface](https://youtu.be/C6WAByIjeM0?si=0LI_a3J-jgLrcxVZ)
+[![Watch the video](https://img.youtube.com/vi/C6WAByIjeM0/0.jpg)](https://youtu.be/C6WAByIjeM0)
 
 Enter your cat's information and you will get a breed.
 
