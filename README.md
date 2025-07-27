@@ -1,4 +1,4 @@
-# Cat Breeds Classifier
+# Cat Breed Classifier
 
 <img src="app/icon/Cat_Breed_Classifier.jpg" alt="Cat Breed Classifier" width="300"/>
 
