@@ -77,7 +77,7 @@ In order to run the model, download the following files and place them in the fo
 
 - [best_model.pt](https://drive.google.com/file/d/1Pyj1RslSIVjpzDAXMwfR0XypPvvolOaN/view?usp=drive_link) -> "models/best_model.pt"
 - [scaler.pkl](https://drive.google.com/file/d/1swz1NJmfQaaInQXAXWtQvlMVaA1Ic-Kz/view?usp=drive_link) -> "artifacts/scaler.pkl"
-- [dummies_columns.pkl](https://drive.google.com/file/d/1eW3iQX07ZVU25IjxTBv8PJ_1YsJ3epL-/view?usp=drive_link) -> "dummies_columns.pkl"
+- [dummies_columns.pkl](https://drive.google.com/file/d/1eW3iQX07ZVU25IjxTBv8PJ_1YsJ3epL-/view?usp=drive_link) -> "artifacts/dummies_columns.pkl"
 
 ## Operation method
 
